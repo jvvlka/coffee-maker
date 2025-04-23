@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>COFFEE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- MENU -->
+    <div id="menu">
+      <div class="layout">
+        <div class="column">
+          <div class="coffee" onclick="showPanel()">
+            <img src="Kawka1.jpeg" alt="Americano" />
+            <p>Americano</p>
+          </div>
+          <div class="coffee" onclick="showFrappePanel()">
+            <img src="Kawka3.jpeg" alt="Frappe" />
+            <p>Frappe</p>
+          </div>
+        </div>
+
+        <div class="middle">
+          <img src="gif.gif" alt="Kotek z kawą" class="cat-gif" />
+        </div>
+
+        <div class="column">
+          <div class="coffee" onclick="showLattePanel()">
+            <img src="Kawka2.jpeg" alt="Latte" />
+            <p>Latte</p>
+          </div>
+          <div class="coffee" onclick="showMochaPanel()">
+            <img src="Kawka4.jpeg" alt="Mocha" />
+            <p>Mocha</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AMERICANO -->
+    <div id="panel">
+      <h2>Americano</h2>
+      <img id="cup" src="Cup.gif" alt="Cup" class="main-image" />
+      <div class="ingredients">
+        <div class="ingredient">
+          <img src="Espresso.gif" alt="Espresso" onclick="changeCup('Cup2.gif')" />
+          <p>Espresso</p>
+        </div>
+        <div class="ingredient">
+          <img src="HotWater.gif" alt="Hot Water" onclick="changeCup('Cup3.gif')" />
+          <p>Hot Water</p>
+        </div>
+      </div>
+      <button id="backButton" onclick="goBack()">Menu</button>
+    </div>
+
+    <!-- FRAPPE -->
+    <div id="frappe-panel">
+      <h2>Frappe</h2>
+      <img id="frappe-image" src="Frappe1.gif" alt="Frappe" class="main-image" />
+      <div class="ingredients">
+        <div class="ingredient">
+          <img src="Espresso.gif" alt="Espresso" onclick="changeFrappeImage(1)" />
+          <p>Espresso</p>
+        </div>
+        <div class="ingredient">
+          <img src="IceCube.gif" alt="Ice Cube" onclick="changeFrappeImage(2)" />
+          <p>Ice Cube</p>
+        </div>
+        <div class="ingredient">
+          <img src="Honey.gif" alt="Honey" onclick="changeFrappeImage(3)" />
+          <p>Honey</p>
+        </div>
+        <div class="ingredient">
+          <img src="WhippedCream.gif" alt="Whipped Cream" onclick="changeFrappeImage(4)" />
+          <p>Whipped Cream</p>
+        </div>
+      </div>
+      <button id="backButton" onclick="goBack()">Menu</button>
+    </div>
+
+    <!-- LATTE -->
+    <div id="latte-panel" style="display: none;">
+      <h2>Latte</h2>
+      <img id="latte-image" src="LatteCup.gif" alt="Latte" class="main-image" />
+      <div class="ingredients">
+        <div class="ingredient">
+          <img src="FoamMilk.gif" alt="Foam Milk" onclick="changeLatteImage('FoamMilk.gif')" />
+          <p>Foam Milk</p>
+        </div>
+        <div class="ingredient">
+          <img src="Espresso.gif" alt="Espresso" onclick="changeLatteImage('Kawka2.jpeg')" />
+          <p>Espresso</p>
+        </div>
+      </div>
+      <button id="backButton" onclick="goBack()">Menu</button>
+    </div>
+
+    <!-- MOCHA -->
+    <div id="mocha-panel" style="display: none;">
+      <h2>Mocha</h2>
+      <img id="mocha-image" src="MochaCup.gif" alt="Mocha" class="main-image" />
+      <div class="ingredients">
+        <div class="ingredient">
+          <img src="Espresso.gif" alt="Espresso" onclick="changeMochaImage('MochaEspresso.gif')" />
+          <p>Espresso</p>
+        </div>
+        <div class="ingredient">
+          <img src="ChocolateMilk.gif" alt="Chocolate Milk" onclick="changeMochaImage('MochaChocolate.gif')" />
+          <p>Chocolate Milk</p>
+        </div>
+        <div class="ingredient">
+          <img src="WhippedCream.gif" alt="Whipped Cream" onclick="changeMochaImage('Kawka4.jpeg')" />
+          <p>Whipped Cream</p>
+        </div>
+      </div>
+      <button id="backButton" onclick="goBack()">Menu</button>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
