@@ -1,0 +1,125 @@
+body {
+  background-color: #f5e3c3;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.coffee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  border-radius: 12px;
+  width: 180px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.coffee:hover {
+  transform: scale(1.05);
+}
+
+.coffee img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.coffee p {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #3b2c1a;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cat-gif {
+  width: 600px;
+  height: auto;
+}
+
+#panel,
+#frappe-panel,
+#latte-panel,
+#mocha-panel {
+  display: none;
+  padding: 40px;
+  text-align: center;
+}
+
+.main-image {
+  width: 250px;
+  margin-bottom: 30px;
+  transition: 0.3s ease;
+}
+
+.ingredients {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.ingredient {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ingredient p {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #3b2c1a;
+  font-size: 14px;
+}
+
+.ingredients img {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#backButton {
+  margin-top: 40px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #5c3a21;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#backButton:hover {
+  background-color: #3b2c1a;
+}
